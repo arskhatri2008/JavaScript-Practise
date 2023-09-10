@@ -113,4 +113,145 @@
 // console.log(mult(3,3))
 
 
+// Array
+// index value starts from 0
+// length value starts from 1
 
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// console.log(myFriends[myFriends.length-1])
+
+
+// for in loop
+// for in loop use to find indexes of elements
+
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// for( let elements in myFriends){
+//     console.log(elements);
+// }
+
+// for of loop
+// for of loop works same as for loop works.
+
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// for( let elements of myFriends){
+//     console.log(elements);
+// }
+
+
+// forEach
+// forEach calls a function for each element in the array
+// forEach performs both for in loop and for of loop
+
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// myFriends.forEach((element , index , array)=>{
+//     console.log(`${element} index ${index} array ${array}`)
+// })
+
+
+// Search functions in array
+
+// indexOf
+// indexOf returns (least) index of an element within the array equal to an element, or -1 if none is found. It search the element from the 0th index number / forward search from start to last.
+
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// console.log(myFriends.indexOf('faraz',2))
+
+
+// lastIndexOf returns (greatest) index of an element within the array equal to an element, or -1 if none is found. It search the element from the last index number / backward search from last to first.
+
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// console.log(myFriends.lastIndexOf('ali' ,1))
+
+
+// includes
+// includes returns boolean value means either search returns in true or false.
+
+// var myFriends = ['kashan','fayyaz','ali','jameel']
+
+// console.log(myFriends.includes('ali' ,3))
+
+//find method
+// find method returns the found element in the array. and show "undefined" if not found. only problem is that it returns only one element
+
+// const prices = [50,100,150,200,250,300,350,400,450,500]
+
+// const findPrice = prices.find((price)=>{
+//     return price < 300
+// })
+
+// console.log(findPrice);
+
+// short arrow method
+// console.log(prices.find((price)=> price < 300))
+
+
+//findIndex method
+// find method returns the found index in the array, and show -1 if not found. only problem is that it returns only one element
+
+// const prices = [50,100,150,200,250,300,350,400,450,500]
+
+// const findPrice = prices.findIndex((price)=>{
+//     return price < 300
+// })
+
+// console.log(findPrice);
+
+// short arrow method
+// console.log(prices.findIndex((price)=> price < 300))
+
+// filter method
+// filter method returns the new array with all the elements that passes the test. and show [] empty arry if not found.
+
+// const prices = [50,100,150,200,250,300,350,400,450,500]
+
+// const findPrice = prices.filter((element)=>{
+//     return element < 300
+// })
+
+// console.log(findPrice);
+
+
+// sort method
+// returns the sorted array, the default sort is ascending, built upon converting the elements into strings.
+
+// const months = ['Dec','March','June','Feb','May','Aug','Jan']
+
+// console.log(months.sort());
+
+
+
+// sort method on numbers
+// however if numbers are sorted as strings, "20" is bigger than "100000" because "2" is bigger than "1".
+// because of this the sort() method will produce an incorrect result when sorting numbers.
+
+// const num = [1,5,10000,99,20]
+
+// console.log(num.sort())
+
+
+// CRUD operations in Array
+
+// push method
+// the push method adds one or more elements to the end of the array and returns the new length of the array.
+
+// const animals = ['goat','cow','chicken','sheep','rabbit']
+
+// const newAnimals = animals.push('horse' , 'cat')
+
+// console.log(animals)
+
+// unshift method
+
+// the unshift method adds one or more elements to the beginning of the array and returns the new length of the array.
+
+const animals = ['goat','cow','chicken','sheep','rabbit']
+
+const newAnimals = animals.unshift('horse' , 'cat')
+
+console.log(animals)
