@@ -61,3 +61,56 @@
 //     console.log(num)
 // }while(num <= 10)
 
+// for(var num = 0; num <= 10; num++){
+//     console.log(num)
+// }
+
+// for(var num = 1; num <= 10; num++){
+//     var table = 9
+//     console.log('8 * ',num,' = ',table*num)
+// }
+
+// function sum (a,b) {
+//     // var a = 10, b=20
+//     var total = a+b
+//     console.log(total)
+// }
+
+// sum(30,20)
+
+
+// function bioData(){
+//     const myFirstName = 'Arsalan'
+//     console.log(myFirstName)
+
+//     if(true){
+//         const myLastName = 'Ahmed'
+//         console.log('inner ', myFirstName)
+//         console.log('inner ', myLastName)
+//     }
+
+//     console.log('outer ', myLastName)
+// }
+
+// bioData()
+
+
+//  var => function scope / global scope
+//  var and let reassigned their values but const not, const remain constant
+// let and const => block scope 
+//      {
+//          Block Scope
+//     }
+
+// Default parameters works when second argument not enter then function automatically use default parameter.
+// in (a,b=5) round brackets are called = Parameters
+// when calling function and pass variables or number (3,3) are called = Arguments
+
+// function mult(a,b=5){
+//     return a*b
+// }
+
+// console.log(mult(3,3))
+
+
+
