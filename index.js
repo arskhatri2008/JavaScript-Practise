@@ -250,8 +250,77 @@
 
 // the unshift method adds one or more elements to the beginning of the array and returns the new length of the array.
 
-const animals = ['goat','cow','chicken','sheep','rabbit']
+// const animals = ['goat','cow','chicken','sheep','rabbit']
 
-const newAnimals = animals.unshift('horse' , 'cat')
+// const newAnimals = animals.unshift('horse' , 'cat')
 
-console.log(animals)
+// console.log(animals)
+
+
+
+// pop method
+
+// the pop method removes the last element from an array and returns that element. This method changes the length of the array.
+
+// const plants = ['tomato','potato','carrot','pepper','onion']
+
+// console.log(plants)
+// console.log(plants.pop());
+// console.log(plants)
+
+
+// shift method
+// the shift method removes the first element from an array and returns that element. This method changes the length of the array.
+
+// const plants = ['tomato','potato','carrot','pepper','onion']
+
+// console.log(plants)
+// console.log(plants.shift());
+// console.log(plants)
+
+
+// splice method
+// the splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// 1. Add Dec at the end of an Array
+// 2. What is the return value of splice method
+// 3. Update march to March
+// 4. Delete June form an Array
+
+const months = ['march','June','Feb','May','Aug','Jan']
+
+// sol:1
+
+// const newMonths = months.splice(7,0,'Dec')
+// const newMonths = months.splice(months.length,0,'Dec')
+// console.log(months);
+
+//sol:2
+// Splice returns an empty array because splice method mostly use for delete elements and here we dont delete any element thats why empty array returns, if we delete any element then that deleted element show in return array.
+
+// console.log(newMonths);
+
+// sol:3
+
+// console.log(months);
+// const updateMonth = months.splice(0,1,'March')
+
+// const indexOfMonth = months.indexOf('march')
+
+// if(indexOfMonth != -1){
+//     const updateMonth = months.splice(indexOfMonth,1,'March')
+//     console.log(updateMonth);
+// }else{
+//     console.log('No month found');
+// }
+
+// console.log(updateMonth);
+// console.log(months);
+
+
+// sol:4
+
+// const deleteMonth = months.splice(months.indexOf('June'),1)
+
+// console.log(months);
+
+
