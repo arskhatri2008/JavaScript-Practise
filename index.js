@@ -324,3 +324,41 @@ const months = ['march','June','Feb','May','Aug','Jan']
 // console.log(months);
 
 
+// map method
+// It returns new array without mutating the original array
+
+// let array1 = [1,2,3,4,5]
+
+// let newArr = array1.map((elem,index,arr)=>{
+//     return `Index no is ${index} and element is ${elem} and array is ${arr} and array length is ${arr.length}`
+// })
+
+// console.log(newArr);
+
+
+// 1. Find the square root of each element in an array
+// 2. Multiply each element by 2 and returns only those elements which are greater than 10.
+
+
+// sol1:
+
+// let arr = [25,36,49,64,81]
+
+// let arrSqr = arr.map((elem)=>{
+//     return Math.sqrt(elem)
+// })
+
+// console.log(arrSqr)
+
+
+// sol2:
+
+let arr = [2,3,4,6,8,]
+
+let arr2 = arr.map((elem)=>{
+    return elem*2
+}).filter((elem)=>{
+    return elem>10
+})
+
+console.log(arr2);
